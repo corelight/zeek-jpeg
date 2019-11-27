@@ -27,6 +27,8 @@ redef record fa_file += {
 	jpeg: Info &optional;
 };
 
+const jpeg_mime_types = { "image/jpeg" };
+
 event zeek_init() &priority=5
 	{
 	Files::register_for_mime_types(Files::ANALYZER_JPEG, jpeg_mime_types);
