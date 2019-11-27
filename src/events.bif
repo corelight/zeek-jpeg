@@ -11,4 +11,4 @@ event file_jpeg%(f: fa_file%);
 ## f: The file.
 ## h: The JPEG marker data
 ##
-event file_jpeg_marker%(f: fa_file, h: JPEG::JPEGMarker%);
+event file_jpeg_marker%(f: fa_file, h: FileAnalyzers::JPEGMarker%);

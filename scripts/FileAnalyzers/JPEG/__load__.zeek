@@ -6,4 +6,5 @@
 #
 
 # @load ./bar
+@load ./main
 
