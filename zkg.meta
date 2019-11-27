@@ -1,4 +1,4 @@
 [package]
 script_dir = scripts/FileAnalyzers/JPEG
-build_command = ./configure && make
+build_command = ./configure --zeek-dist=%(zeek_dist)s && make
 test_command = cd tests && btest
