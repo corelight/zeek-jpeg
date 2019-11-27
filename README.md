@@ -1,5 +1,5 @@
 
-#FileAnalyzers::JPEG
+# FileAnalyzers::JPEG
 
 ## Building and Installing
 
