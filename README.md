@@ -1,5 +1,5 @@
 
-# FileAnalyzers::JPEG
+# A Zeek FileAnalyzers::JPEG Plugin
 
 ## Building and Installing
 
