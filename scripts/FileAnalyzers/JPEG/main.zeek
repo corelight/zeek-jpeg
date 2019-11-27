@@ -29,6 +29,7 @@ redef record fa_file += {
 
 event zeek_init() &priority=5
 	{
+	Files::register_for_mime_types(Files::ANALYZER_JPEG, jpeg_mime_types);
 	Log::create_stream(LOG, [$columns=Info, $ev=log_jpeg, $path="jpeg"]);
 	}
 
