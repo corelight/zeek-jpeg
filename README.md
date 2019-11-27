@@ -1,5 +1,9 @@
 
-# A Zeek FileAnalyzers::JPEG Plugin
+# A Zeek FileAnalyzers Package
+
+This package implements:
+
+- JPEG
 
 ## Building and Installing
 
@@ -12,6 +16,8 @@ sudo make install
 ```
 
 ## Using
+
+### JPEG
 
 Once installed, this plugin can be loaded with the following Zeek script:
 
