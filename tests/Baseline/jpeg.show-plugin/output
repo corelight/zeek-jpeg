@@ -1,0 +1,6 @@
+FileAnalyzers::JPEG - JPEG File Analyzer (dynamic, version)
+    [File Analyzer] JPEG (ANALYZER_JPEG)
+    [Type] FileAnalyzers::JPEGMarker
+    [Event] file_jpeg
+    [Event] file_jpeg_marker
+
