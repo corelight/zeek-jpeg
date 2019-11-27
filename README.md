@@ -15,7 +15,19 @@ make
 sudo make install
 ```
 
-## Using
+If you have zkg and you have already ran...
+
+```
+zkg autoconfig
+```
+
+... then you can install this package as so:
+
+```
+sudo zkg install https://github.com/keithjjones/ZeekFileAnalyzers
+```
+
+## Using FileAnalyzers
 
 ### JPEG
 
