@@ -6,8 +6,14 @@ project(ZeekPluginJPEG)
 include(ZeekPlugin)
 
 zeek_plugin_begin(FileAnalyzers JPEG)
-zeek_plugin_cc(src/Plugin.cc)
-zeek_plugin_bif(src/jpeg.bif)
+zeek_plugin_pac(
+        src/jpeg.pac
+        src/jpeg-analyzer.pac
+        src/jpeg-file-headers.pac
+        src/jpeg-file.pac
+)
+zeek_plugin_cc(src/JPEG.cc src/Plugin.cc)
+zeek_plugin_bif(src/jpeg.bif src/types.bif src/events.bif)
 zeek_plugin_dist_files(README CHANGES COPYING VERSION)
 zeek_plugin_end()
 
