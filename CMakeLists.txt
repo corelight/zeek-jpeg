@@ -5,7 +5,7 @@ project(ZeekPluginJPEG)
 
 include(ZeekPlugin)
 
-zeek_plugin_begin(FileAnalyzers JPEG)
+zeek_plugin_begin(Zeek JPEG)
 zeek_plugin_pac(
         src/jpeg.pac
         src/jpeg-analyzer.pac

@@ -5,7 +5,7 @@
 #include <plugin/Plugin.h>
 
 namespace plugin {
-namespace FileAnalyzers_JPEG {
+namespace Zeek_JPEG {
 
 class Plugin : public ::plugin::Plugin
 {

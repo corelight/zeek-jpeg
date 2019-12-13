@@ -1,6 +1,6 @@
 module JPEG;
 export {
-type FileAnalyzers::JPEGMarker: record {
+type Zeek::JPEGMarker: record {
     # The type of marker
 	marker_val               : count;
 	# The length, including the length

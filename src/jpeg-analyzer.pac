@@ -27,7 +27,7 @@ refine flow File += {
             int markers[] = { 0, 1, 2, 3, 4 };
             for (int m: markers)
                 {
-                RecordVal* dh = new RecordVal(BifType::Record::FileAnalyzers::JPEGMarker);
+                RecordVal* dh = new RecordVal(BifType::Record::Zeek::JPEGMarker);
                 dh->Assign(0, val_mgr->GetCount(${h.markers[m].marker_val}));
                 dh->Assign(1, val_mgr->GetCount(${h.markers[m].length}));
                 dh->Assign(2, new StringVal(${h.markers[m].data}.length(), (const char*) ${h.markers[m].data}.data()));

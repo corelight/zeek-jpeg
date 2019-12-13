@@ -1,5 +1,5 @@
 
-# A Zeek FileAnalyzers Package
+# A Zeek JPEG File Analyzer Package
 
 This package implements:
 
@@ -24,19 +24,17 @@ zkg autoconfig
 ... then you can install this package as so:
 
 ```
-sudo zkg install https://github.com/keithjjones/ZeekFileAnalyzers
+sudo zkg install https://github.com/corelight/zeek-jpeg
 ```
 
-## Using FileAnalyzers
-
-### JPEG
+## Using JPEG
 
 Once installed, this plugin can be loaded with the following Zeek script:
 
 ```
-@load FileAnalyzers/JPEG
+@load Zeek/JPEG
 
-event file_jpeg_marker(f: fa_file, m: FileAnalyzers::JPEGMarker)
+event file_jpeg_marker(f: fa_file, m: Zeek::JPEGMarker)
     {
     print m;
     }
