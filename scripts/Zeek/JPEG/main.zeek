@@ -50,7 +50,7 @@ event file_jpeg(f: fa_file) &priority=5
         f$jpeg$total_bytes = f$total_bytes;
 	}
 
-event file_jpeg_marker(f: fa_file, m: FileAnalyzers::JPEGMarker)
+event file_jpeg_marker(f: fa_file, m: Zeek::JPEGMarker)
     {
     	hook set_file(f);
 

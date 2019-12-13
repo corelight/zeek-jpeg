@@ -1,1 +1,1 @@
-type FileAnalyzers::JPEGMarker: record;
+type Zeek::JPEGMarker: record;
