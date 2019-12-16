@@ -1,0 +1,14 @@
+#separator \x09
+#set_separator	,
+#empty_field	(empty)
+#unset_field	-
+#path	jpeg
+#open	2019-12-16-14-05-18
+#fields	ts	id	total_bytes	width	height	jfif_major	jfif_minor	comment
+#types	time	string	count	count	count	count	count	string
+1100903355.573238	FxUtSi4RIZf03k0sFd	8281	512	512	1	1	Created with The GIMP
+1100903355.580655	FKuUQ14DO6SOTBbaB5	9045	500	89	1	1	Created with The GIMP
+1100903360.932707	FC536m3fh036oWUd3i	8963	180	240	1	1	Created with The GIMP
+1100903360.939152	Fqu89k3QfZCvvvZN0g	10730	180	240	1	1	Created with The GIMP
+1100903365.003584	FqMaUw18GBKJ7r5oca	191515	960	1280	1	1	Created with The GIMP
+#close	2019-12-16-14-05-18
