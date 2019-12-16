@@ -5,6 +5,21 @@ This package implements:
 
 - JPEG
 
+## TLDR!
+
+Use your trusty zkg, and you can install like so:
+
+```
+% zkg autoconfig
+% zkg install https://github.com/corelight/zeek-jpeg
+```
+
+Now in any Zeek script, just load the plugin and it "just works":
+
+```
+@load Zeek/JPEG
+```
+
 ## Building and Installing
 
 This plugin can be built with:
