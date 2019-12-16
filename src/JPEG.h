@@ -16,20 +16,20 @@ namespace file_analysis {
  */
 class JPEG : public file_analysis::Analyzer {
 public:
-	~JPEG();
+    ~JPEG();
 
-	static file_analysis::Analyzer* Instantiate(RecordVal* args, File* file)
-		{ return new JPEG(args, file); }
+    static file_analysis::Analyzer* Instantiate(RecordVal* args, File* file)
+        { return new JPEG(args, file); }
 
-	virtual bool DeliverStream(const u_char* data, uint64_t len);
+    virtual bool DeliverStream(const u_char* data, uint64_t len);
 
-	virtual bool EndOfFile();
+    virtual bool EndOfFile();
 
 protected:
     JPEG(RecordVal* args, File* file);
-	binpac::JPEG::File* interp;
-	binpac::JPEG::MockConnection* conn;
-	bool done;
+    binpac::JPEG::File* interp;
+    binpac::JPEG::MockConnection* conn;
+    bool done;
 };
 
 } // namespace file_analysis

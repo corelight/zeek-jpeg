@@ -1,8 +1,8 @@
 type Headers = record {
-	jpeg_header     : JPEG_Header;
+    jpeg_header     : JPEG_Header;
 } &let {
-	# Do not care about parsing rest of the file so mark done now ...
-	proc:             bool   = $context.connection.mark_done();
+    # Do not care about parsing rest of the file so mark done now ...
+    proc:             bool   = $context.connection.mark_done();
 };
 
 type JPEG_Header = record {

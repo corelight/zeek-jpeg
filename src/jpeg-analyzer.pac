@@ -14,13 +14,13 @@
 
 refine flow File += {
 
-	function proc_jpeg_header(h: JPEG_Header): bool
-		%{
+    function proc_jpeg_header(h: JPEG_Header): bool
+        %{
 
-	    DBG_LOG(DBG_FILE_ANALYSIS, "TRYING TO PROCESS A JPEG!!!");
+        DBG_LOG(DBG_FILE_ANALYSIS, "TRYING TO PROCESS A JPEG!!!");
 
-	    if ( file_jpeg_marker )
-			{
+        if ( file_jpeg_marker )
+            {
 
             DBG_LOG(DBG_FILE_ANALYSIS, "PROCESSING A JPEG!!!");
 
@@ -42,8 +42,8 @@ refine flow File += {
 
         DBG_LOG(DBG_FILE_ANALYSIS, "DONE PROCESSING A JPEG!!!");
 
-		return true;
-		%}
+        return true;
+        %}
 };
 
 refine typeattr JPEG_Header += &let {
