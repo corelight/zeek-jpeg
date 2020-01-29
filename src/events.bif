@@ -1,5 +1,5 @@
-## This event is generated each time file analysis identifies
-## a jpeg file.
+## This event is generated each time file analysis starts the 
+## JPEG module on a file.
 ##
 ## f: The file.
 ##
