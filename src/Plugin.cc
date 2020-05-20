@@ -1,5 +1,6 @@
 
 #include "Plugin.h"
+#include "file_analysis/Component.h"
 #include "JPEG.h"
 
 namespace plugin { namespace Zeek_JPEG { Plugin plugin; } }

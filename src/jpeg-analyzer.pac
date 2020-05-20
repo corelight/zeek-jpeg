@@ -1,5 +1,6 @@
 %extern{
 #include "Event.h"
+#include "DebugLogger.h"
 #include "file_analysis/File.h"
 #include "events.bif.h"
 #include "types.bif.h"
