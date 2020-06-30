@@ -1,4 +1,4 @@
-#include "JPEG.h"
+#include "jpeg.h"
 #include "file_analysis/Manager.h"
 
 using namespace file_analysis;
