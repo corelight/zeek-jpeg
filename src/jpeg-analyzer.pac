@@ -1,6 +1,5 @@
 %extern{
 #include "Event.h"
-#include "DebugLogger.h"
 #include "file_analysis/File.h"
 #include "events.bif.h"
 #include "types.bif.h"
@@ -18,12 +17,8 @@ refine flow File += {
     function proc_jpeg_header(h: JPEG_Header): bool
         %{
 
-        DBG_LOG(DBG_FILE_ANALYSIS, "TRYING TO PROCESS A JPEG!!!");
-
         if ( file_jpeg_marker )
             {
-
-            DBG_LOG(DBG_FILE_ANALYSIS, "PROCESSING A JPEG!!!");
 
             int markers[] = { 0, 1, 2, 3, 4 };
             for (int m: markers)
@@ -40,8 +35,6 @@ refine flow File += {
                     });
                 }
             }
-
-        DBG_LOG(DBG_FILE_ANALYSIS, "DONE PROCESSING A JPEG!!!");
 
         return true;
         %}
